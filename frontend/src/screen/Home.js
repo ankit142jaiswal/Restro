@@ -38,7 +38,7 @@ function Home() {
                             
                             <div className="d-flex justify-content-center" style={{boxShadow: "0 0 10px 5px rgba(0, 0, 0, 0.2)", borderRadius: "5px"}}>
                             
-                                <input className="form-control fs-4 rounded " id='seacrh' type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
+                                <input className="form-control fs-4 " id='seacrh' type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
                                 {/* <button className="btn btn-outline-success text-white bg fs-4" type="submit">Search</button> */}
                             </div>
                         </div>
