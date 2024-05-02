@@ -13,7 +13,7 @@ function Signup() {
     const collectData = async (e) => {
         e.preventDefault();
         console.log(name, password, email, location);
-        let result = await fetch("http://localhost:5000/api/createuser", {
+        let result = await fetch("https://restro-i14v.onrender.com/api/createuser", {
             method: 'POST',
             body: JSON.stringify({ name, email, password, location }),
             headers: {
