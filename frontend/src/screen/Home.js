@@ -7,7 +7,7 @@ function Home() {
     const [foodItem, setFoodItem] = useState([]);
 
     const loadData = async () => {
-        let result = await fetch("http://localhost:5000/api/foodData", {
+        let result = await fetch("http://localhost:5001/api/foodData", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -36,9 +36,9 @@ function Home() {
                                 <p className='m-5 text-success'  style={{height:"100px", fontSize:"100px", fontWeight:"bolder",fontStyle:"italic"}} >Restro</p>
                             </div>
                             
-                            <div className="d-flex justify-content-center" style={{boxShadow: "0 0 10px 5px rgba(0, 0, 0, 0.2)"}}>
+                            <div className="d-flex justify-content-center" style={{boxShadow: "0 0 10px 5px rgba(0, 0, 0, 0.2)", borderRadius: "5px"}}>
                             
-                                <input className="form-control  fs-4 " id='seacrh' type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
+                                <input className="form-control fs-4 rounded " id='seacrh' type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
                                 {/* <button className="btn btn-outline-success text-white bg fs-4" type="submit">Search</button> */}
                             </div>
                         </div>

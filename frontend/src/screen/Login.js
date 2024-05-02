@@ -11,7 +11,7 @@ function Login() {
   const collectData = async (e) => {
     e.preventDefault();
     console.log({ email, password })
-    let result = await fetch("http://localhost:5000/api/loginuser", {
+    let result = await fetch("http://localhost:5001/api/loginuser", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {
